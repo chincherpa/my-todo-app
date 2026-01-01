@@ -6,18 +6,18 @@ st.set_page_config(page_title="Supabase To-Do Pro", page_icon="🚀")
 conn = st.connection("supabase", type=SupabaseConnection)
 
 # --- SPRACHLOGIK ---
-sprache = st.sidebar.radio("Sprache", ("Deutsch", "English"))
+sprache = st.radio("Sprache", ("Deutsch", "English"))
 texte = {
     "Deutsch": {
-        "titel": "🚀 To-Do mit Kategorien",
+        "titel": "🚀 meine To-Dos",
         "label": "Aufgabe",
         "kat_label": "Kategorie",
-        "btn": "Hinzufügen",
+        "btn": "ok",
         "kategorien": ["Privat", "Arbeit", "Einkauf", "Wichtig"],
         "loeschen": "Löschen"
     },
     "English": {
-        "titel": "🚀 To-Do with Categories",
+        "titel": "🚀 my To-Dos",
         "label": "Task",
         "kat_label": "Category",
         "btn": "Add",
